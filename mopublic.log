@@ -1,0 +1,15 @@
+20:19:41.463 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Thu Jul 23 20:19:41 CEST 2015.
+20:19:41.550 [main] INFO  org.catais.geoig.ai.mopublic.Main - Total elapsed time: 102 ms
+20:19:41.550 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Thu Jul 23 20:19:41 CEST 2015.
+20:21:12.103 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Thu Jul 23 20:21:12 CEST 2015.
+20:21:12.174 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+20:21:12.183 [main] INFO  org.catais.geoig.ai.mopublic.Main - Elapsed time: 96 ms
+20:21:12.183 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+20:21:12.184 [main] INFO  org.catais.geoig.ai.mopublic.Main - Total elapsed time: 105 ms
+20:21:12.184 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Thu Jul 23 20:21:12 CEST 2015.
+20:21:31.818 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Thu Jul 23 20:21:31 CEST 2015.
+20:21:31.892 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+20:21:31.902 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 98 ms
+20:21:31.902 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+20:21:31.902 [main] INFO  org.catais.geoig.ai.mopublic.Main - Total elapsed time: 108 ms
+20:21:31.902 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Thu Jul 23 20:21:31 CEST 2015.
