@@ -504,3 +504,32 @@ LANGUAGE 'plpgsql';
 19:52:47.457 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
 19:52:47.457 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 5377 ms
 19:52:47.457 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Jul 26 19:52:47 CEST 2015.
+19:14:08.643 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Tue Jul 28 19:14:08 CEST 2015.
+19:14:08.645 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:14:17.551 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Tue Jul 28 19:14:17 CEST 2015.
+19:14:17.552 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:28:26.474 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Wed Jul 29 19:28:26 CEST 2015.
+19:28:26.476 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:28:33.769 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - sequence.sql
+19:28:33.779 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - metadata_metadata.sql
+19:28:33.780 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - control_points_control_point.sql
+19:28:33.780 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - land_cover_lcsurface.sql
+19:28:33.781 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - land_cover_lcsurfaceproj.sql
+19:28:33.781 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - local_names_names.sql
+19:28:33.853 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 7399 ms
+19:28:33.853 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:28:33.854 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 7409 ms
+19:28:33.854 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Wed Jul 29 19:28:33 CEST 2015.
+19:43:57.473 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Wed Jul 29 19:43:57 CEST 2015.
+19:43:57.475 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:44:02.698 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - sequence.sql
+19:44:02.707 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - metadata_metadata.sql
+19:44:02.707 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - control_points_control_point.sql
+19:44:02.707 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - land_cover_lcsurface.sql
+19:44:02.708 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - land_cover_lcsurfaceproj.sql
+19:44:02.708 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - local_names_names.sql
+19:44:02.709 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_boundary_point.sql
+19:44:02.737 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 5276 ms
+19:44:02.737 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:44:02.737 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 5286 ms
+19:44:02.737 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Wed Jul 29 19:44:02 CEST 2015.
