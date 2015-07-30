@@ -42,7 +42,7 @@ FROM bb LEFT JOIN gebnr ON bb.t_id = gebnr.gebaeudenummer_von
 -- The first INSERT INTO has to be also a CTE (?).
 -- can be combined with lc-CTE, see: http://www.postgresql.org/docs/9.1/static/queries-with.html (7.8.2. Data-Modifying Statements in WITH)
 foo AS (
-INSERT INTO av_mopublic_export.land_cover_lcsurface (t_id, quality, type, regbl_egid, state_of, fosnr, geometry)
+INSERT INTO '||dbschema||'.land_cover_lcsurface (t_id, quality, type, regbl_egid, state_of, fosnr, geometry)
 SELECT t_id, qualitaet, art, gwr_egid, stand_am, gem_bfs, geometrie
 FROM lc
 ),
@@ -70,7 +70,7 @@ AND a.t_id = b.objektnamepos_von
 AND a.objektname_von = c.bb_t_id
 )
 
-INSERT INTO av_mopublic_export.land_cover_lcsurface_postext(t_id, type, number_name, ori, hali, vali, fosnr, postext_of, pos)
+INSERT INTO '||dbschema||'.land_cover_lcsurface_postext(t_id, type, number_name, ori, hali, vali, fosnr, postext_of, pos)
 SELECT t_id, typ, name, ori, hali, vali, gem_bfs, postext_of, pos
 FROM lcpostext;
 ';

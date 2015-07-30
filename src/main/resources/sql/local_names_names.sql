@@ -30,7 +30,7 @@ UNION ALL
 ),
 
 foo AS (
-INSERT INTO av_mopublic_export.local_names_names (t_id, category, name, type, state_of, fosnr, geometry)
+INSERT INTO '||dbschema||'.local_names_names (t_id, category, name, type, state_of, fosnr, geometry)
 SELECT t_id, kategorie, name, typ, stand_am, gem_bfs, geometrie
 FROM names
 ),
@@ -55,12 +55,12 @@ names_posname AS (
 
   SELECT nextval('''||dbschema||'.t_id'') AS t_id, NULL::integer as posname_of, 2 as kategorie, b.name, a.pos, CASE WHEN a.ori IS NULL THEN 100 ELSE a.ori END as ori, a.hali, a.vali, a.gem_bfs
   FROM av_avdpool_ng.nomenklatur_gelaendenamepos as a, av_avdpool_ng.nomenklatur_gelaendename as b
-  WHERE a.gem_bfs = '||bfsnr||' AND b.gem_bfs = '||bfsnr||' 
+  WHERE a.gem_bfs = '||bfsnr||' AND b.gem_bfs = '||bfsnr||'
   AND b.t_id = a.gelaendenamepos_von
  ) as u
 )
 
-INSERT INTO av_mopublic_export.local_names_names_posname (t_id, category, name, ori, hali, vali, fosnr, posname_of, pos)
+INSERT INTO '||dbschema||'.local_names_names_posname (t_id, category, name, ori, hali, vali, fosnr, posname_of, pos)
 SELECT t_id, kategorie, name, ori, hali, vali, gem_bfs, posname_of, pos
 FROM names_posname;
 ';

@@ -18,7 +18,7 @@ AND b.gem_bfs = '||bfsnr||'
 AND b.entstehung = a.t_id
 )
 
-INSERT INTO av_mopublic_export.ownership_boundary_point (t_id, validity, plan_accuracy, plan_reliability, mark, state_of, fosnr, geometry)
+INSERT INTO '||dbschema||'.ownership_boundary_point (t_id, validity, plan_accuracy, plan_reliability, mark, state_of, fosnr, geometry)
 SELECT t_id, gueltigkeit, lagegen, lagezuv, punktzeichen, stand_am::timestamp without time zone, gem_bfs, geometrie
 FROM boundary_point;
 ';

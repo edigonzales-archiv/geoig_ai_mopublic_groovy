@@ -41,7 +41,7 @@ FROM bb LEFT JOIN gebnr ON bb.t_id = gebnr.projgebaeudenummer_von
 
 -- The first INSERT INTO has to be also a CTE (?).
 foo AS (
-INSERT INTO av_mopublic_export.land_cover_lcsurfaceproj (t_id, quality, type, regbl_egid, state_of, fosnr, geometry)
+INSERT INTO '||dbschema||'.land_cover_lcsurfaceproj (t_id, quality, type, regbl_egid, state_of, fosnr, geometry)
 SELECT t_id, qualitaet, art, gwr_egid, stand_am, gem_bfs, geometrie
 FROM lc
 ),
@@ -69,7 +69,7 @@ AND a.t_id = b.projobjektnamepos_von
 AND a.projobjektname_von = c.bb_t_id
 )
 
-INSERT INTO av_mopublic_export.land_cover_lcsurfaceproj_postext(t_id, type, number_name, ori, hali, vali, fosnr, postext_of, pos)
+INSERT INTO '||dbschema||'.land_cover_lcsurfaceproj_postext(t_id, type, number_name, ori, hali, vali, fosnr, postext_of, pos)
 SELECT t_id, typ, name, ori, hali, vali, gem_bfs, postext_of, pos
 FROM lcpostext;
 ';
