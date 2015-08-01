@@ -533,3 +533,18 @@ LANGUAGE 'plpgsql';
 19:44:02.737 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
 19:44:02.737 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 5286 ms
 19:44:02.737 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Wed Jul 29 19:44:02 CEST 2015.
+10:49:08.519 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sat Aug 01 10:49:08 CEST 2015.
+10:49:08.521 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+10:49:15.597 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - sequence.sql
+10:49:15.606 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - metadata_metadata.sql
+10:49:15.607 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - control_points_control_point.sql
+10:49:15.607 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - land_cover_lcsurface.sql
+10:49:15.608 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - land_cover_lcsurfaceproj.sql
+10:49:15.608 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - local_names_names.sql
+10:49:15.608 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_boundary_point.sql
+10:49:15.608 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_realestate.sql
+10:49:15.609 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_dpr_mine.sql
+10:49:15.673 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 7172 ms
+10:49:15.673 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+10:49:15.673 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 7182 ms
+10:49:15.674 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sat Aug 01 10:49:15 CEST 2015.

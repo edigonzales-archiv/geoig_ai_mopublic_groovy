@@ -61,7 +61,8 @@ class PostgresqlDatabase {
 		// from DM01AVCH24D -> MOpublic03_ili2_v13
 		def functionFiles = ['sequence.sql', 'metadata_metadata.sql', 'control_points_control_point.sql', 
 			'land_cover_lcsurface.sql', 'land_cover_lcsurfaceproj.sql', 'local_names_names.sql',
-			'ownership_boundary_point.sql', 'ownership_realestate.sql']
+			'ownership_boundary_point.sql', 'ownership_realestate.sql', 'ownership_dpr_mine.sql',
+			'ownership_dpr_mineproj.sql']
 		
 		// Loop through all the files and concat the sql together to one query string.
 		// Set search_path (aka schema).
