@@ -605,3 +605,1256 @@ LANGUAGE 'plpgsql';
 12:01:12.673 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
 12:01:12.673 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 5495 ms
 12:01:12.673 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 12:01:12 CEST 2015.
+12:03:07.626 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 12:03:07 CEST 2015.
+12:03:07.627 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+12:03:12.982 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - sequence.sql
+12:03:12.991 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - metadata_metadata.sql
+12:03:12.992 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - control_points_control_point.sql
+12:03:12.992 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - land_cover_lcsurface.sql
+12:03:12.993 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - land_cover_lcsurfaceproj.sql
+12:03:12.993 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - local_names_names.sql
+12:03:12.994 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_boundary_point.sql
+12:03:12.994 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_realestate.sql
+12:03:12.994 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_dpr_mine.sql
+12:03:12.995 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_dpr_mineproj.sql
+12:03:12.995 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - single_objects_surface_element.sql
+12:03:12.995 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - single_objects_linear_element.sql
+12:03:12.996 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - single_objects_point_element.sql
+12:03:12.996 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - territorial_boundaries_boundary_terr_point.sql
+12:03:12.996 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - territorial_boundaries_municipal_boundary.sql
+12:03:13.003 [main] ERROR org.catais.geoig.ai.mopublic.PostgresqlDatabase - Cannot get property 'text' on null object
+12:03:13.037 [main] INFO  org.catais.geoig.ai.mopublic.PostgresqlDatabase - Schema dropped: av_mopublic_export.
+12:03:13.051 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 5437 ms
+12:03:13.052 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+12:03:13.052 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 5451 ms
+12:03:13.052 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 12:03:13 CEST 2015.
+12:09:38.994 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 12:09:38 CEST 2015.
+12:09:38.995 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+12:09:44.329 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - sequence.sql
+12:09:44.338 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - metadata_metadata.sql
+12:09:44.339 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - control_points_control_point.sql
+12:09:44.339 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - land_cover_lcsurface.sql
+12:09:44.340 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - land_cover_lcsurfaceproj.sql
+12:09:44.340 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - local_names_names.sql
+12:09:44.341 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_boundary_point.sql
+12:09:44.341 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_realestate.sql
+12:09:44.341 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_dpr_mine.sql
+12:09:44.342 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_dpr_mineproj.sql
+12:09:44.342 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - single_objects_surface_element.sql
+12:09:44.342 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - single_objects_linear_element.sql
+12:09:44.343 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - single_objects_point_element.sql
+12:09:44.343 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - territorial_boundaries_boundary_terr_point.sql
+12:09:44.344 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - territorial_boundaries_municipal_boundary.sql
+12:09:44.350 [main] ERROR org.catais.geoig.ai.mopublic.PostgresqlDatabase - Cannot get property 'text' on null object
+12:09:44.386 [main] INFO  org.catais.geoig.ai.mopublic.PostgresqlDatabase - Schema dropped: av_mopublic_export.
+12:09:44.402 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 5416 ms
+12:09:44.402 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+12:09:44.402 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 5432 ms
+12:09:44.402 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 12:09:44 CEST 2015.
+12:10:21.526 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 12:10:21 CEST 2015.
+12:10:21.528 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+12:10:26.867 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - sequence.sql
+12:10:26.876 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - metadata_metadata.sql
+12:10:26.877 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - control_points_control_point.sql
+12:10:26.877 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - land_cover_lcsurface.sql
+12:10:26.877 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - land_cover_lcsurfaceproj.sql
+12:10:26.878 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - local_names_names.sql
+12:10:26.878 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_boundary_point.sql
+12:10:26.878 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_realestate.sql
+12:10:26.879 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_dpr_mine.sql
+12:10:26.879 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_dpr_mineproj.sql
+12:10:26.880 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - single_objects_surface_element.sql
+12:10:26.880 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - single_objects_linear_element.sql
+12:10:26.881 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - single_objects_point_element.sql
+12:10:26.881 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - territorial_boundaries_boundary_terr_point.sql
+12:10:26.881 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - territorial_boundaries_municipal_boundary.sql
+12:10:26.882 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - territorial_boundaries_municipal_boundproj.sql
+12:10:26.883 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - territorial_boundaries_other_territ_boundary.sql
+12:10:26.883 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - building_addresses.sql
+12:10:26.938 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 5426 ms
+12:10:26.938 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+12:10:26.938 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 5436 ms
+12:10:26.939 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 12:10:26 CEST 2015.
+12:12:33.954 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 12:12:33 CEST 2015.
+12:12:33.956 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+12:12:39.330 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - sequence.sql
+12:12:39.338 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - metadata_metadata.sql
+12:12:39.339 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - control_points_control_point.sql
+12:12:39.339 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - land_cover_lcsurface.sql
+12:12:39.339 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - land_cover_lcsurfaceproj.sql
+12:12:39.339 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - local_names_names.sql
+12:12:39.340 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_boundary_point.sql
+12:12:39.340 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_realestate.sql
+12:12:39.340 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_dpr_mine.sql
+12:12:39.341 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - ownership_dpr_mineproj.sql
+12:12:39.341 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - single_objects_surface_element.sql
+12:12:39.341 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - single_objects_linear_element.sql
+12:12:39.342 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - single_objects_point_element.sql
+12:12:39.342 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - territorial_boundaries_boundary_terr_point.sql
+12:12:39.342 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - territorial_boundaries_municipal_boundary.sql
+12:12:39.343 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - territorial_boundaries_municipal_boundproj.sql
+12:12:39.344 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - territorial_boundaries_other_territ_boundary.sql
+12:12:39.344 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - building_addresses.sql
+12:12:39.375 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 5435 ms
+12:12:39.375 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+12:12:39.376 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 5444 ms
+12:12:39.376 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 12:12:39 CEST 2015.
+14:10:50.083 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 14:10:50 CEST 2015.
+14:10:50.084 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+14:11:36.930 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 14:11:36 CEST 2015.
+14:11:36.932 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+14:12:34.045 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 14:12:34 CEST 2015.
+14:12:34.046 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+14:12:39.404 [main] DEBUG org.catais.geoig.ai.mopublic.MOpublicSQLFunctions - SET search_path TO groovy.sql.Sql$35@5b7ea70d;
+--DROP SEQUENCE t_id;
+CREATE SEQUENCE t_id START 1;
+--DROP FUNCTION metadata_metadata(text, integer);
+CREATE OR REPLACE FUNCTION metadata_metadata(dbschema text, bfsnr integer)
+  RETURNS boolean AS
+$$
+BEGIN
+  EXECUTE
+'
+INSERT INTO av_mopublic_export.metadata_metadata (t_id, generated_from, generated_based_model, generated_date, other_metadata_information)
+SELECT nextval('''||dbschema||'.t_id'') AS t_id, ''ili2pg'' as generated_from, ''DM01AVCH24D'' as generated_based_model, now()::timestamp without time zone as generated_date, '||bfsnr||'::text as other_metadata_information
+';
+
+  RETURN TRUE;
+END;
+$$
+LANGUAGE 'plpgsql';
+--DROP FUNCTION control_points_control_point(text, integer);
+CREATE OR REPLACE FUNCTION control_points_control_point(dbschema text, bfsnr integer)
+  RETURNS boolean AS
+$$
+BEGIN
+  EXECUTE
+'
+WITH lfp1 AS (
+SELECT a.t_id, 0 as kategorie, a.nbident, nummer, geometrie, lagegen, hoehegeom, hoehegen,
+  CASE
+    WHEN a.punktzeichen IS NULL THEN 7
+    ELSE a.punktzeichen
+  END as punktzeichen,
+  CASE
+    WHEN b.gueltigereintrag IS NULL THEN b.datum1
+    ELSE b.gueltigereintrag
+  END AS stand_am,
+a.gem_bfs as bfsnr
+FROM av_avdpool_ng.fixpunktekategorie1_lfp1 as a,
+     av_avdpool_ng.fixpunktekategorie1_lfp1nachfuehrung as b
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND a.entstehung = b.t_id
+),
+lfp2 AS (
+SELECT a.t_id, 2 as kategorie, a.nbident, nummer, geometrie, lagegen, hoehegeom, hoehegen,
+  CASE
+    WHEN a.punktzeichen IS NULL THEN 7
+    ELSE a.punktzeichen
+  END as punktzeichen,
+  CASE
+    WHEN b.gueltigereintrag IS NULL THEN b.datum1
+    ELSE b.gueltigereintrag
+  END AS stand_am,
+a.gem_bfs as bfsnr
+FROM av_avdpool_ng.fixpunktekategorie2_lfp2 as a,
+     av_avdpool_ng.fixpunktekategorie2_lfp2nachfuehrung as b
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND a.entstehung = b.t_id
+),
+lfp3 AS (
+SELECT a.t_id, 4 as kategorie, a.nbident, nummer, geometrie, lagegen, hoehegeom, hoehegen,
+  CASE
+    WHEN a.punktzeichen IS NULL THEN 7
+    ELSE a.punktzeichen
+  END as punktzeichen,
+  CASE
+    WHEN b.gueltigereintrag IS NULL THEN b.datum1
+    ELSE b.gueltigereintrag
+  END AS stand_am,
+a.gem_bfs as bfsnr
+FROM av_avdpool_ng.fixpunktekategorie3_lfp3 as a,
+     av_avdpool_ng.fixpunktekategorie3_lfp3nachfuehrung as b
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND a.entstehung = b.t_id
+),
+hfp1 AS (
+SELECT a.t_id, 1 as kategorie, a.nbident, nummer, geometrie, lagegen, hoehegeom, hoehegen, 8 as punktzeichen,
+  CASE
+    WHEN b.gueltigereintrag IS NULL THEN b.datum1
+    ELSE b.gueltigereintrag
+  END AS stand_am,
+a.gem_bfs as bfsnr
+FROM av_avdpool_ng.fixpunktekategorie1_hfp1 as a,
+     av_avdpool_ng.fixpunktekategorie1_hfp1nachfuehrung as b
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND a.entstehung = b.t_id
+),
+hfp2 AS (
+SELECT a.t_id, 3 as kategorie, a.nbident, nummer, geometrie, lagegen, hoehegeom, hoehegen, 8 as punktzeichen,
+  CASE
+    WHEN b.gueltigereintrag IS NULL THEN b.datum1
+    ELSE b.gueltigereintrag
+  END AS stand_am,
+a.gem_bfs as bfsnr
+FROM av_avdpool_ng.fixpunktekategorie2_hfp2 as a,
+     av_avdpool_ng.fixpunktekategorie2_hfp2nachfuehrung as b
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND a.entstehung = b.t_id
+),
+hfp3 AS (
+SELECT a.t_id, 5 as kategorie, a.nbident, nummer, geometrie, lagegen, hoehegeom, hoehegen, 8 as punktzeichen,
+  CASE
+    WHEN b.gueltigereintrag IS NULL THEN b.datum1
+    ELSE b.gueltigereintrag
+  END AS stand_am,
+a.gem_bfs as bfsnr
+FROM av_avdpool_ng.fixpunktekategorie3_hfp3 as a,
+     av_avdpool_ng.fixpunktekategorie3_hfp3nachfuehrung as b
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND a.entstehung = b.t_id
+)
+
+INSERT INTO '||dbschema||'.control_points_control_point (t_id, category, identnd, anumber, plan_accuracy, geom_alt,
+       alt_accuracy, mark, state_of, fosnr, geometry)
+SELECT nextval('''||dbschema||'.t_id'') AS t_id, kategorie as category, nbident as identnd, nummer as anumber,
+       lagegen as plan_accuracy, hoehegeom as geom_alt, hoehegen as alt_accuracy, punktzeichen as mark,
+       stand_am::timestamp without time zone as state_of,
+       bfsnr as fosnr, geometrie as geometry
+FROM
+(
+ SELECT * FROM lfp1
+ UNION ALL
+ SELECT * FROM lfp2
+ UNION ALL
+ SELECT * FROM lfp3
+ UNION ALL
+ SELECT * FROM hfp1
+ UNION ALL
+ SELECT * FROM hfp2
+ UNION ALL
+ SELECT * FROM hfp3
+) as foo;
+';
+
+  RETURN TRUE;
+END;
+$$
+LANGUAGE 'plpgsql';
+--DROP FUNCTION land_cover_lcsurface(text, integer);
+CREATE OR REPLACE FUNCTION land_cover_lcsurface(dbschema text, bfsnr integer)
+  RETURNS boolean AS
+$$
+BEGIN
+  EXECUTE
+'
+WITH bb AS (
+SELECT a.t_id, a.gem_bfs, a.art,
+  CASE
+    WHEN b.gueltigereintrag IS NULL THEN b.datum1
+    ELSE b.gueltigereintrag
+  END AS stand_am,
+  CASE
+    WHEN a.qualitaet IS NULL THEN 0
+    ELSE a.qualitaet
+  END AS qualitaet, a.geometrie
+FROM av_avdpool_ng.bodenbedeckung_boflaeche a, av_avdpool_ng.bodenbedeckung_bbnachfuehrung b
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND a.entstehung = b.t_id
+),
+
+gebnr AS (
+SELECT gebaeudenummer_von, gwr_egid, gem_bfs
+FROM av_avdpool_ng.bodenbedeckung_gebaeudenummer
+WHERE gem_bfs = '||bfsnr||'
+),
+
+-- "lc" entspricht Struktur und Inhalt lcsurface-Tabelle von MOpublic.
+-- "lc" bekommt eine neue t_id (von der Sequenz).
+-- bb_t_id ist eigentlich nicht notwendig. Aber es wird fuer das Herstellen der Relation
+-- der lcsurface_postext-Tabelle zur lcsurface-Tabelle verwendet (da wir ja eine neue
+-- t_id vergeben).
+lc AS (
+SELECT nextval('''||dbschema||'.t_id'') AS t_id, bb.t_id as bb_t_id, bb.qualitaet, bb.art, gebnr.gwr_egid,
+       bb.stand_am::timestamp without time zone as stand_am,
+       bb.gem_bfs, bb.geometrie
+FROM bb LEFT JOIN gebnr ON bb.t_id = gebnr.gebaeudenummer_von
+),
+
+-- The first INSERT INTO has to be also a CTE (?).
+-- can be combined with lc-CTE, see: http://www.postgresql.org/docs/9.1/static/queries-with.html (7.8.2. Data-Modifying Statements in WITH)
+foo AS (
+INSERT INTO '||dbschema||'.land_cover_lcsurface (t_id, quality, type, regbl_egid, state_of, fosnr, geometry)
+SELECT t_id, qualitaet, art, gwr_egid, stand_am, gem_bfs, geometrie
+FROM lc
+),
+
+-- lcsurface_postext-Tabelle
+-- lcpos.a.objektname_von = lc.bb.t_id
+lcpostext AS (
+SELECT nextval('''||dbschema||'.t_id'') AS t_id, c.t_id as postext_of, 1::integer as typ, a.name,
+       b.pos, b.ori,
+       CASE
+         WHEN b.hali IS NULL
+         THEN 1
+         ELSE b.hali
+       END as hali,
+       CASE
+         WHEN b.vali IS NULL
+         THEN 2
+          ELSE b.vali
+       END as vali,
+       a.gem_bfs
+FROM av_avdpool_ng.bodenbedeckung_objektname as a, av_avdpool_ng.bodenbedeckung_objektnamepos as b, lc as c
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND a.t_id = b.objektnamepos_von
+AND a.objektname_von = c.bb_t_id
+)
+
+INSERT INTO '||dbschema||'.land_cover_lcsurface_postext(t_id, type, number_name, ori, hali, vali, fosnr, postext_of, pos)
+SELECT t_id, typ, name, ori, hali, vali, gem_bfs, postext_of, pos
+FROM lcpostext;
+';
+
+  RETURN TRUE;
+END;
+$$
+LANGUAGE 'plpgsql';
+--DROP FUNCTION land_cover_lcsurfaceproj(text, integer);
+CREATE OR REPLACE FUNCTION land_cover_lcsurfaceproj(dbschema text, bfsnr integer)
+  RETURNS boolean AS
+$$
+BEGIN
+  EXECUTE
+'
+WITH bb AS (
+SELECT a.t_id, a.gem_bfs, a.art,
+  CASE
+    WHEN b.gueltigereintrag IS NULL THEN b.datum1
+    ELSE b.gueltigereintrag
+  END AS stand_am,
+  CASE
+    WHEN a.qualitaet IS NULL THEN 0
+    ELSE a.qualitaet
+  END AS qualitaet, a.geometrie
+FROM av_avdpool_ng.bodenbedeckung_projboflaeche a, av_avdpool_ng.bodenbedeckung_bbnachfuehrung b
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND a.entstehung = b.t_id
+),
+
+gebnr AS (
+SELECT projgebaeudenummer_von, gwr_egid, gem_bfs
+FROM av_avdpool_ng.bodenbedeckung_projgebaeudenummer
+WHERE gem_bfs = '||bfsnr||'
+),
+
+-- "lc" entspricht Struktur und Inhalt lcsurface-Tabelle von MOpublic.
+-- "lc" bekommt eine neue t_id (von der Sequenz).
+-- bb_t_id ist eigentlich nicht notwendig. Aber es wird fuer das Herstellen der Relation
+-- der lcsurface_postext-Tabelle zur lcsurface-Tabelle verwendet (da wir ja eine neue
+-- t_id vergeben).
+lc AS (
+SELECT nextval('''||dbschema||'.t_id'') AS t_id, bb.t_id as bb_t_id, bb.qualitaet, bb.art, gebnr.gwr_egid,
+       bb.stand_am::timestamp without time zone  as stand_am,
+       bb.gem_bfs, bb.geometrie
+FROM bb LEFT JOIN gebnr ON bb.t_id = gebnr.projgebaeudenummer_von
+),
+
+-- The first INSERT INTO has to be also a CTE (?).
+foo AS (
+INSERT INTO '||dbschema||'.land_cover_lcsurfaceproj (t_id, quality, type, regbl_egid, state_of, fosnr, geometry)
+SELECT t_id, qualitaet, art, gwr_egid, stand_am, gem_bfs, geometrie
+FROM lc
+),
+
+-- lcsurface_postext-Tabelle
+-- lcpos.a.objektname_von = lc.bb.t_id
+lcpostext AS (
+SELECT nextval('''||dbschema||'.t_id'') AS t_id, c.t_id as postext_of, 1::integer as typ, a.name,
+       b.pos, b.ori,
+       CASE
+         WHEN b.hali IS NULL
+         THEN 1
+         ELSE b.hali
+       END as hali,
+       CASE
+         WHEN b.vali IS NULL
+         THEN 2
+          ELSE b.vali
+       END as vali,
+       a.gem_bfs
+FROM av_avdpool_ng.bodenbedeckung_projobjektname as a, av_avdpool_ng.bodenbedeckung_projobjektnamepos as b, lc as c
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND a.t_id = b.projobjektnamepos_von
+AND a.projobjektname_von = c.bb_t_id
+)
+
+INSERT INTO '||dbschema||'.land_cover_lcsurfaceproj_postext(t_id, type, number_name, ori, hali, vali, fosnr, postext_of, pos)
+SELECT t_id, typ, name, ori, hali, vali, gem_bfs, postext_of, pos
+FROM lcpostext;
+';
+
+  RETURN TRUE;
+END;
+$$
+LANGUAGE 'plpgsql';
+--DROP FUNCTION local_names_names(text, integer);
+CREATE OR REPLACE FUNCTION local_names_names(dbschema text, bfsnr integer)
+  RETURNS boolean AS
+$$
+BEGIN
+  EXECUTE
+'
+WITH names AS (
+ SELECT nextval('''||dbschema||'.t_id'') AS t_id, a.t_id as names_t_id, 0 as kategorie, name, geometrie, NULL::varchar as typ,
+  CASE
+   WHEN b.gueltigereintrag IS NULL THEN b.datum1
+   ELSE b.gueltigereintrag
+  END AS stand_am,
+  a.gem_bfs
+ FROM av_avdpool_ng.nomenklatur_flurname as a, av_avdpool_ng.nomenklatur_nknachfuehrung as b
+ WHERE a.gem_bfs = '||bfsnr||' AND b.gem_bfs = '||bfsnr||'
+ AND b.t_id = a.entstehung
+
+UNION ALL
+
+ SELECT nextval('''||dbschema||'.t_id'') AS t_id, a.t_id as names_t_id, 1 as kategorie, name, geometrie, a.typ,
+  CASE
+   WHEN c.gueltigereintrag IS NULL THEN c.datum1
+   ELSE c.gueltigereintrag
+  END AS stand_am,
+  a.gem_bfs
+ FROM av_avdpool_ng.nomenklatur_ortsname as a, av_avdpool_ng.nomenklatur_nknachfuehrung as c
+ WHERE a.gem_bfs = '||bfsnr||' AND c.gem_bfs = '||bfsnr||'
+ AND c.t_id = a.entstehung
+),
+
+foo AS (
+INSERT INTO '||dbschema||'.local_names_names (t_id, category, name, type, state_of, fosnr, geometry)
+SELECT t_id, kategorie, name, typ, stand_am, gem_bfs, geometrie
+FROM names
+),
+
+names_posname AS (
+ SELECT t_id, posname_of, kategorie, name, pos, ori, hali, vali, gem_bfs
+ FROM
+ (
+  SELECT nextval('''||dbschema||'.t_id'') AS t_id, b.t_id as posname_of, 0 as kategorie, b.name, a.pos, CASE WHEN a.ori IS NULL THEN 100 ELSE a.ori END as ori, a.hali, a.vali, a.gem_bfs
+  FROM av_avdpool_ng.nomenklatur_flurnamepos as a, names as b
+  WHERE a.gem_bfs = '||bfsnr||' AND b.gem_bfs = '||bfsnr||'
+  AND b.names_t_id = a.flurnamepos_von
+
+  UNION ALL
+
+  SELECT nextval('''||dbschema||'.t_id'') AS t_id, b.t_id as posname_of, 1 as kategorie, b.name, a.pos, CASE WHEN a.ori IS NULL THEN 100 ELSE a.ori END as ori, a.hali, a.vali, a.gem_bfs
+  FROM av_avdpool_ng.nomenklatur_ortsnamepos as a, names as b
+  WHERE a.gem_bfs = '||bfsnr||' AND b.gem_bfs = '||bfsnr||'
+  AND b.names_t_id = a.ortsnamepos_von
+
+  UNION ALL
+
+  SELECT nextval('''||dbschema||'.t_id'') AS t_id, NULL::integer as posname_of, 2 as kategorie, b.name, a.pos, CASE WHEN a.ori IS NULL THEN 100 ELSE a.ori END as ori, a.hali, a.vali, a.gem_bfs
+  FROM av_avdpool_ng.nomenklatur_gelaendenamepos as a, av_avdpool_ng.nomenklatur_gelaendename as b
+  WHERE a.gem_bfs = '||bfsnr||' AND b.gem_bfs = '||bfsnr||'
+  AND b.t_id = a.gelaendenamepos_von
+ ) as u
+)
+
+INSERT INTO '||dbschema||'.local_names_names_posname (t_id, category, name, ori, hali, vali, fosnr, posname_of, pos)
+SELECT t_id, kategorie, name, ori, hali, vali, gem_bfs, posname_of, pos
+FROM names_posname;
+';
+
+  RETURN TRUE;
+END;
+$$
+LANGUAGE 'plpgsql';
+--DROP FUNCTION ownership_boundary_point(text, integer);
+CREATE OR REPLACE FUNCTION ownership_boundary_point(dbschema text, bfsnr integer)
+  RETURNS boolean AS
+$$
+BEGIN
+  EXECUTE
+'
+WITH boundary_point AS (
+SELECT nextval('''||dbschema||'.t_id'') AS t_id, a.gueltigkeit, b.lagegen, b.lagezuv, b.punktzeichen,
+ CASE
+   WHEN a.gueltigereintrag IS NULL THEN a.datum1
+   ELSE a.gueltigereintrag
+ END AS stand_am,
+ b.gem_bfs, b.geometrie
+FROM av_avdpool_ng.liegenschaften_lsnachfuehrung as a, av_avdpool_ng.liegenschaften_grenzpunkt as b
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND b.entstehung = a.t_id
+)
+
+INSERT INTO '||dbschema||'.ownership_boundary_point (t_id, validity, plan_accuracy, plan_reliability, mark, state_of, fosnr, geometry)
+SELECT t_id, gueltigkeit, lagegen, lagezuv, punktzeichen, stand_am::timestamp without time zone, gem_bfs, geometrie
+FROM boundary_point;
+';
+
+  RETURN TRUE;
+END;
+$$
+LANGUAGE 'plpgsql';
+--DROP FUNCTION ownership_realestate(text, integer);
+CREATE OR REPLACE FUNCTION ownership_realestate(dbschema text, bfsnr integer)
+  RETURNS boolean AS
+$$
+BEGIN
+  EXECUTE
+'
+WITH realestate AS (
+SELECT nextval('''||dbschema||'.t_id'') as t_id, a.t_id as gs_t_id, a.nbident, a.nummer, a.egris_egrid, a.vollstaendigkeit, b.flaechenmass,
+ CASE
+   WHEN d.gueltigereintrag IS NULL THEN d.datum1
+   ELSE d.gueltigereintrag
+ END AS stand_am,
+ b.gem_bfs, b.geometrie
+FROM av_avdpool_ng.liegenschaften_lsnachfuehrung as d, av_avdpool_ng.liegenschaften_grundstueck as a, av_avdpool_ng.liegenschaften_liegenschaft as b
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND d.gem_bfs = '||bfsnr||'
+AND b.liegenschaft_von = a.t_id
+AND a.entstehung = d.t_id
+),
+
+foo AS (
+INSERT INTO '||dbschema||'.ownership_realestate (t_id, identnd, anumber, egris_egrid, completeness, area, state_of, fosnr, geometry)
+SELECT t_id, nbident, nummer, egris_egrid, vollstaendigkeit, flaechenmass, stand_am::timestamp without time zone, gem_bfs, geometrie
+FROM realestate
+),
+
+realestate_posnumber AS (
+SELECT nextval('''||dbschema||'.t_id'') as t_id, a.nbident, a.nummer,
+ CASE
+  WHEN b.ori IS NULL THEN 100::double precision
+  ELSE b.ori
+ END AS ori,
+ CASE
+  WHEN b.hali IS NULL THEN 1
+  ELSE b.hali
+ END as hali,
+ CASE
+  WHEN b.vali IS NULL THEN 2
+  ELSE b.vali
+ END as vali,
+ a.gem_bfs, a.t_id as posnumber_of, b.pos
+FROM realestate as a, av_avdpool_ng.liegenschaften_grundstueckpos as b
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND a.gs_t_id = b.grundstueckpos_von
+)
+
+INSERT INTO '||dbschema||'.ownership_realestate_posnumber (t_id, identnd, anumber, ori, hali, vali, fosnr, posnumber_of, pos)
+SELECT t_id, nbident, nummer, ori, hali, vali, gem_bfs, posnumber_of, pos
+FROM realestate_posnumber;
+';
+
+  RETURN TRUE;
+END;
+$$
+LANGUAGE 'plpgsql';
+--DROP FUNCTION ownership_dpr_mine(text, integer);
+CREATE OR REPLACE FUNCTION ownership_dpr_mine(dbschema text, bfsnr integer)
+  RETURNS boolean AS
+$$
+BEGIN
+  EXECUTE
+'
+-- Mines are missing since there are no mines in Solothurn.
+WITH dpr AS (
+SELECT nextval('''||dbschema||'.t_id'') as t_id, a.t_id as dpr_t_id, a.nbident, a.nummer, a.egris_egrid, a.vollstaendigkeit, (a.art-1) as art, b.flaechenmass,
+ CASE
+   WHEN d.gueltigereintrag IS NULL THEN d.datum1
+   ELSE d.gueltigereintrag
+ END AS stand_am,
+ b.gem_bfs, b.geometrie
+FROM av_avdpool_ng.liegenschaften_lsnachfuehrung as d, av_avdpool_ng.liegenschaften_grundstueck as a, av_avdpool_ng.liegenschaften_selbstrecht as b
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND d.gem_bfs = '||bfsnr||'
+AND b.selbstrecht_von = a.t_id
+AND a.entstehung = d.t_id
+),
+
+foo AS (
+INSERT INTO '||dbschema||'.ownership_dpr_mine (t_id, identnd, anumber, egris_egrid, completeness, realestate_type, area, state_of, fosnr, geometry)
+SELECT t_id, nbident, nummer, egris_egrid, vollstaendigkeit, art, flaechenmass, stand_am::timestamp without time zone, gem_bfs, geometrie
+FROM dpr
+),
+
+dpr_posnumber AS (
+SELECT nextval('''||dbschema||'.t_id'') as t_id, a.nbident, a.nummer,
+ CASE
+  WHEN b.ori IS NULL THEN 100::double precision
+  ELSE b.ori
+ END AS ori,
+ CASE
+  WHEN b.hali IS NULL THEN 1
+  ELSE b.hali
+ END as hali,
+ CASE
+  WHEN b.vali IS NULL THEN 2
+  ELSE b.vali
+ END as vali,
+ a.gem_bfs, a.t_id as posnumber_of, b.pos
+FROM dpr as a, av_avdpool_ng.liegenschaften_grundstueckpos as b
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND a.dpr_t_id = b.grundstueckpos_von
+)
+
+INSERT INTO '||dbschema||'.ownership_dpr_mine_posnumber (t_id, identnd, anumber, ori, hali, vali, fosnr, posnumber_of, pos)
+SELECT t_id, nbident, nummer, ori, hali, vali, gem_bfs, posnumber_of, pos
+FROM dpr_posnumber;
+';
+
+  RETURN TRUE;
+END;
+$$
+LANGUAGE 'plpgsql';
+--DROP FUNCTION ownership_dpr_mineproj(text, integer);
+CREATE OR REPLACE FUNCTION ownership_dpr_mineproj(dbschema text, bfsnr integer)
+  RETURNS boolean AS
+$$
+BEGIN
+  EXECUTE
+'
+-- Mines are missing since there are no mines in Solothurn.
+WITH dprproj AS (
+SELECT nextval('''||dbschema||'.t_id'') as t_id, a.t_id as dpr_t_id, a.nbident, a.nummer, a.egris_egrid, a.vollstaendigkeit, (a.art-1) as art, b.flaechenmass,
+ CASE
+   WHEN d.gueltigereintrag IS NULL THEN d.datum1
+   ELSE d.gueltigereintrag
+ END AS stand_am,
+ b.gem_bfs, b.geometrie
+FROM av_avdpool_ng.liegenschaften_lsnachfuehrung as d, av_avdpool_ng.liegenschaften_projgrundstueck as a, av_avdpool_ng.liegenschaften_projselbstrecht as b
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND d.gem_bfs = '||bfsnr||'
+AND b.projselbstrecht_von = a.t_id
+AND a.entstehung = d.t_id
+),
+
+foo AS (
+INSERT INTO '||dbschema||'.ownership_dpr_mineproj (t_id, identnd, anumber, egris_egrid, completeness, realestate_type, area, state_of, fosnr, geometry)
+SELECT t_id, nbident, nummer, egris_egrid, vollstaendigkeit, art, flaechenmass, stand_am::timestamp without time zone, gem_bfs, geometrie
+FROM dprproj
+),
+
+dprproj_posnumber AS (
+SELECT nextval('''||dbschema||'.t_id'') as t_id, a.nbident, a.nummer,
+ CASE
+  WHEN b.ori IS NULL THEN 100::double precision
+  ELSE b.ori
+ END AS ori,
+ CASE
+  WHEN b.hali IS NULL THEN 1
+  ELSE b.hali
+ END as hali,
+ CASE
+  WHEN b.vali IS NULL THEN 2
+  ELSE b.vali
+ END as vali,
+ a.gem_bfs, a.t_id as posnumber_of, b.pos
+FROM dprproj as a, av_avdpool_ng.liegenschaften_projgrundstueckpos as b
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND a.dpr_t_id = b.projgrundstueckpos_von
+)
+
+INSERT INTO '||dbschema||'.ownership_dpr_mineproj_posnumber (t_id, identnd, anumber, ori, hali, vali, fosnr, posnumber_of, pos)
+SELECT t_id, nbident, nummer, ori, hali, vali, gem_bfs, posnumber_of, pos
+FROM dprproj_posnumber;
+';
+
+  RETURN TRUE;
+END;
+$$
+LANGUAGE 'plpgsql';
+--DROP FUNCTION single_objects_surface_element(text, integer);
+CREATE OR REPLACE FUNCTION single_objects_surface_element(dbschema text, bfsnr integer)
+  RETURNS boolean AS
+$$
+BEGIN
+  EXECUTE
+'
+WITH flaechenelement AS (
+SELECT nextval('''||dbschema||'.t_id'') as t_id, b.t_id as eo_t_id, a.gueltigkeit, b.art,
+ CASE
+  WHEN b.qualitaet IS NULL THEN 0
+  ELSE b.qualitaet
+ END AS qualitaet,
+ CASE
+  WHEN a.gueltigereintrag IS NULL THEN a.datum1
+  ELSE a.gueltigereintrag
+ END AS stand_am,
+ c.gem_bfs, c.geometrie
+FROM av_avdpool_ng.einzelobjekte_eonachfuehrung as a, av_avdpool_ng.einzelobjekte_einzelobjekt as b, av_avdpool_ng.einzelobjekte_flaechenelement as c
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND c.gem_bfs = '||bfsnr||'
+AND a.t_id = b.entstehung
+AND b.t_id = c.flaechenelement_von
+),
+
+single_objects_surface_element AS (
+ SELECT a.*, b.gwr_egid
+ FROM flaechenelement as a
+ LEFT JOIN
+ (
+  SELECT *
+  FROM av_avdpool_ng.einzelobjekte_objektnummer
+  WHERE gem_bfs = 2583
+ ) as b ON b.objektnummer_von = a.eo_t_id
+),
+
+foo AS (
+ INSERT INTO '||dbschema||'.single_objects_surface_element (t_id, validity, type, quality, regbl_egid, state_of, fosnr, geometry)
+ SELECT t_id, gueltigkeit, art, qualitaet, gwr_egid, stand_am::timestamp without time zone, gem_bfs, geometrie
+ FROM single_objects_surface_element
+),
+
+single_objects_surface_element_postext AS (
+ SELECT nextval('''||dbschema||'.t_id'') as t_id, 1::integer as typ, a.name,
+  CASE
+   WHEN b.ori IS NULL THEN 100::double precision
+   ELSE b.ori
+  END AS ori,
+  CASE
+   WHEN b.hali IS NULL THEN 1
+   ELSE b.hali
+  END as hali,
+  CASE
+   WHEN b.vali IS NULL THEN 2
+   ELSE b.vali
+  END as vali,
+  b.gem_bfs, c.t_id as postext_of, b.pos
+ FROM av_avdpool_ng.einzelobjekte_objektname as a, av_avdpool_ng.einzelobjekte_objektnamepos as b, single_objects_surface_element as c
+ WHERE a.gem_bfs = '||bfsnr||'
+ AND b.gem_bfs = '||bfsnr||'
+ AND a.t_id = b.objektnamepos_von
+ AND a.objektname_von = c.eo_t_id
+)
+
+INSERT INTO '||dbschema||'.single_objects_surface_element_postext (t_id, type, number_name, ori, hali, vali, fosnr, postext_of, pos)
+SELECT t_id, typ, name, ori, hali, vali, gem_bfs, postext_of, pos
+FROM single_objects_surface_element_postext;
+';
+
+  RETURN TRUE;
+END;
+$$
+LANGUAGE 'plpgsql';
+--DROP FUNCTION single_objects_linear_element(text, integer);
+CREATE OR REPLACE FUNCTION single_objects_linear_element(dbschema text, bfsnr integer)
+  RETURNS boolean AS
+$$
+BEGIN
+  EXECUTE
+'
+WITH single_objects_linear_element AS (
+SELECT nextval('''||dbschema||'.t_id'') as t_id, b.t_id as eo_t_id, a.gueltigkeit, b.art,
+ CASE
+  WHEN b.qualitaet IS NULL THEN 0
+  ELSE b.qualitaet
+ END AS qualitaet,
+ CASE
+  WHEN a.gueltigereintrag IS NULL THEN a.datum1
+  ELSE a.gueltigereintrag
+ END AS stand_am,
+ c.gem_bfs, c.geometrie
+FROM av_avdpool_ng.einzelobjekte_eonachfuehrung as a, av_avdpool_ng.einzelobjekte_einzelobjekt as b, av_avdpool_ng.einzelobjekte_linienelement as c
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND c.gem_bfs = '||bfsnr||'
+AND a.t_id = b.entstehung
+AND b.t_id = c.linienelement_von
+),
+
+foo AS (
+ INSERT INTO av_mopublic_export.single_objects_linear_element (t_id, validity, type, quality, state_of, fosnr, geometry)
+ SELECT t_id, gueltigkeit, art, qualitaet, stand_am::timestamp without time zone, gem_bfs, geometrie
+ FROM single_objects_linear_element
+),
+
+single_objects_linear_element_postext AS (
+ SELECT nextval('''||dbschema||'.t_id'') as t_id, 1::integer as typ, a.name,
+  CASE
+   WHEN b.ori IS NULL THEN 100::double precision
+   ELSE b.ori
+  END AS ori,
+  CASE
+   WHEN b.hali IS NULL THEN 1
+   ELSE b.hali
+  END as hali,
+  CASE
+   WHEN b.vali IS NULL THEN 2
+   ELSE b.vali
+  END as vali,
+  b.gem_bfs, c.t_id as postext_of, b.pos
+ FROM av_avdpool_ng.einzelobjekte_objektname as a, av_avdpool_ng.einzelobjekte_objektnamepos as b, single_objects_linear_element as c
+ WHERE a.gem_bfs = '||bfsnr||'
+ AND b.gem_bfs = '||bfsnr||'
+ AND a.t_id = b.objektnamepos_von
+ AND a.objektname_von = c.eo_t_id
+)
+
+INSERT INTO '||dbschema||'.single_objects_linear_element_postext (t_id, type, number_name, ori, hali, vali, fosnr, postext_of, pos)
+SELECT t_id, typ, name, ori, hali, vali, gem_bfs, postext_of, pos
+FROM single_objects_linear_element_postext;
+';
+
+  RETURN TRUE;
+END;
+$$
+LANGUAGE 'plpgsql';
+--DROP FUNCTION single_objects_point_element(text, integer);
+CREATE OR REPLACE FUNCTION single_objects_point_element(dbschema text, bfsnr integer)
+  RETURNS boolean AS
+$$
+BEGIN
+  EXECUTE
+'
+WITH single_objects_point_element AS (
+SELECT nextval('''||dbschema||'.t_id'') as t_id, b.t_id as eo_t_id, a.gueltigkeit, b.art,
+ CASE
+  WHEN b.qualitaet IS NULL THEN 0
+  ELSE b.qualitaet
+ END AS qualitaet,
+ CASE
+  WHEN a.gueltigereintrag IS NULL THEN a.datum1
+  ELSE a.gueltigereintrag
+ END AS stand_am,
+ c.gem_bfs, c.geometrie
+FROM av_avdpool_ng.einzelobjekte_eonachfuehrung as a, av_avdpool_ng.einzelobjekte_einzelobjekt as b, av_avdpool_ng.einzelobjekte_punktelement as c
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND c.gem_bfs = '||bfsnr||'
+AND a.t_id = b.entstehung
+AND b.t_id = c.punktelement_von
+),
+
+foo AS (
+ INSERT INTO av_mopublic_export.single_objects_point_element (t_id, validity, type, quality, state_of, fosnr, geometry)
+ SELECT t_id, gueltigkeit, art, qualitaet, stand_am::timestamp without time zone, gem_bfs, geometrie
+ FROM single_objects_linear_element
+),
+
+single_objects_point_element_postext AS (
+ SELECT nextval('''||dbschema||'.t_id'') as t_id, 1::integer as typ, a.name,
+  CASE
+   WHEN b.ori IS NULL THEN 100::double precision
+   ELSE b.ori
+  END AS ori,
+  CASE
+   WHEN b.hali IS NULL THEN 1
+   ELSE b.hali
+  END as hali,
+  CASE
+   WHEN b.vali IS NULL THEN 2
+   ELSE b.vali
+  END as vali,
+  b.gem_bfs, c.t_id as postext_of, b.pos
+ FROM av_avdpool_ng.einzelobjekte_objektname as a, av_avdpool_ng.einzelobjekte_objektnamepos as b, single_objects_point_element as c
+ WHERE a.gem_bfs = '||bfsnr||'
+ AND b.gem_bfs = '||bfsnr||'
+ AND a.t_id = b.objektnamepos_von
+ AND a.objektname_von = c.eo_t_id
+)
+
+INSERT INTO '||dbschema||'.single_objects_linear_element_postext (t_id, type, number_name, ori, hali, vali, fosnr, postext_of, pos)
+SELECT t_id, typ, name, ori, hali, vali, gem_bfs, postext_of, pos
+FROM single_objects_point_element_postext;
+';
+
+  RETURN TRUE;
+END;
+$$
+LANGUAGE 'plpgsql';
+--DROP FUNCTION territorial_boundaries_boundary_terr_point(text, integer);
+CREATE OR REPLACE FUNCTION territorial_boundaries_boundary_terr_point(dbschema text, bfsnr integer)
+  RETURNS boolean AS
+$$
+BEGIN
+  EXECUTE
+'
+INSERT INTO '||dbschema||'.territorial_boundaries_boundary_terr_point (t_id, validity, plan_accuracy, plan_reliability, mark, state_of, fosnr, geometry)
+SELECT nextval('''||dbschema||'.t_id'') as t_id, a.gueltigkeit, b.lagegen, b.lagezuv, b.punktzeichen,
+ CASE
+   WHEN a.gueltigereintrag IS NULL THEN a.datum1::timestamp without time zone
+   ELSE a.gueltigereintrag::timestamp without time zone
+ END AS stand_am,
+ b.gem_bfs, b.geometrie
+FROM av_avdpool_ng.gemeindegrenzen_gemnachfuehrung as a, av_avdpool_ng.gemeindegrenzen_hoheitsgrenzpunkt as b
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND b.entstehung = a.t_id;
+';
+
+  RETURN TRUE;
+END;
+$$
+LANGUAGE 'plpgsql';
+--DROP FUNCTION territorial_boundaries_municipal_boundary(text, integer);
+CREATE OR REPLACE FUNCTION territorial_boundaries_municipal_boundary(dbschema text, bfsnr integer)
+  RETURNS boolean AS
+$$
+BEGIN
+  EXECUTE
+'
+INSERT INTO '||dbschema||'.territorial_boundaries_municipal_boundary (t_id, name, state_of, fosnr, geometry)
+SELECT nextval('''||dbschema||'.t_id'') as t_id, a.name as "name",
+ CASE
+   WHEN c.gueltigereintrag IS NULL THEN c.datum1::timestamp without time zone
+   ELSE c.gueltigereintrag::timestamp without time zone
+ END AS stand_am,
+ b.gem_bfs as bfsnr, b.geometrie as geometrie
+FROM av_avdpool_ng.gemeindegrenzen_gemeinde as a, av_avdpool_ng.gemeindegrenzen_gemeindegrenze as b, av_avdpool_ng.gemeindegrenzen_gemnachfuehrung as c
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND c.gem_bfs = '||bfsnr||'
+AND b.gemeindegrenze_von = a.t_id
+AND c.t_id = b.entstehung;
+';
+
+  RETURN TRUE;
+END;
+$$
+LANGUAGE 'plpgsql';
+--DROP FUNCTION territorial_boundaries_municipal_boundproj(text, integer);
+CREATE OR REPLACE FUNCTION territorial_boundaries_municipal_boundproj(dbschema text, bfsnr integer)
+  RETURNS boolean AS
+$$
+BEGIN
+  EXECUTE
+'
+INSERT INTO '||dbschema||'.territorial_boundaries_municipal_boundproj (t_id, name, state_of, fosnr, geometry)
+SELECT nextval('''||dbschema||'.t_id'') as t_id, a.name as "name",
+ CASE
+   WHEN c.gueltigereintrag IS NULL THEN c.datum1::timestamp without time zone
+   ELSE c.gueltigereintrag::timestamp without time zone
+ END AS stand_am,
+ b.gem_bfs as bfsnr, b.geometrie as geometrie
+FROM av_avdpool_ng.gemeindegrenzen_gemeinde as a, av_avdpool_ng.gemeindegrenzen_projgemeindegrenze as b, av_avdpool_ng.gemeindegrenzen_gemnachfuehrung as c
+WHERE a.gem_bfs = '||bfsnr||'
+AND b.gem_bfs = '||bfsnr||'
+AND c.gem_bfs = '||bfsnr||'
+AND b.projgemeindegrenze_von = a.t_id
+AND c.t_id = b.entstehung;
+';
+
+  RETURN TRUE;
+END;
+$$
+LANGUAGE 'plpgsql';
+--DROP FUNCTION territorial_boundaries_other_territ_boundary(text, integer);
+CREATE OR REPLACE FUNCTION territorial_boundaries_other_territ_boundary(dbschema text, bfsnr integer)
+  RETURNS boolean AS
+$$
+BEGIN
+  EXECUTE
+'
+INSERT INTO '||dbschema||'.territorial_boundaries_other_territ_boundary (t_id, type, bound_validity_type, geometry)
+SELECT t_id, typ, gueltigkeit, geometrie
+FROM
+(
+ SELECT nextval('''||dbschema||'.t_id'') as t_id, 0::integer as typ, geometrie, gueltigkeit, gem_bfs
+ FROM av_avdpool_ng.bezirksgrenzen_bezirksgrenzabschnitt
+ WHERE gem_bfs = '||bfsnr||'
+UNION ALL
+ SELECT nextval('''||dbschema||'.t_id'') as t_id, 1::integer as typ, geometrie, gueltigkeit, gem_bfs
+ FROM av_avdpool_ch.kantonsgrenzen_kantonsgrenzabschnitt
+ WHERE gem_bfs = '||bfsnr||'
+UNION ALL
+ SELECT nextval('''||dbschema||'.t_id'') as t_id, 1::integer as typ, geometrie, gueltigkeit, gem_bfs
+ FROM av_avdpool_ch.landesgrenzen_landesgrenzabschnitt
+ WHERE gem_bfs = '||bfsnr||'
+) as a;
+';
+
+  RETURN TRUE;
+END;
+$$
+LANGUAGE 'plpgsql';
+--DROP FUNCTION building_addresses(text, integer);
+CREATE OR REPLACE FUNCTION building_addresses(dbschema text, bfsnr integer)
+  RETURNS boolean AS
+$$
+BEGIN
+  EXECUTE
+'
+WITH street_name AS (
+-- Why DISTINCT?
+ SELECT DISTINCT ON (d.t_id) c.t_id, c.lok_t_id, c.istoffiziellebezeichnung, c.stand_am, c.gem_bfs, d.atext
+ FROM
+ (
+  SELECT nextval('''||dbschema||'.t_id'') as t_id, a.t_id as lok_t_id,
+   CASE
+    WHEN a.istoffiziellebezeichnung = 0 THEN TRUE
+    ELSE FALSE
+   END as istoffiziellebezeichnung,
+   b.gueltigereintrag::timestamp without time zone as stand_am,
+   a.gem_bfs
+  FROM av_avdpool_ng.gebaeudeadressen_lokalisation as a, av_avdpool_ng.gebaeudeadressen_gebnachfuehrung as b
+  WHERE a.gem_bfs = '||bfsnr||'
+  AND b.gem_bfs = '||bfsnr||'
+  AND b.t_id = a.entstehung
+ ) as c, av_avdpool_ng.gebaeudeadressen_lokalisationsname as d
+ WHERE c.lok_t_id = d.benannte
+),
+
+foo1 AS (
+ INSERT INTO '||dbschema||'.building_addresses_street_name (t_id, street_name, is_official_designation, state_of, fosnr)
+ SELECT t_id, atext, istoffiziellebezeichnung, stand_am, gem_bfs
+ FROM street_name
+),
+
+street_name_pos AS (
+ SELECT nextval('''||dbschema||'.t_id'') as t_id, c.t_id as street_name_of, a.atext, b.pos,
+  CASE
+   WHEN b.ori IS NULL THEN 100::double precision
+   ELSE b.ori
+  END AS ori,
+  CASE
+   WHEN b.hali IS NULL THEN 1
+   ELSE b.hali
+  END as hali,
+  CASE
+   WHEN b.vali IS NULL THEN 2
+   ELSE b.vali
+  END as vali,
+  b.gem_bfs
+ FROM av_avdpool_ng.gebaeudeadressen_lokalisationsname as a, av_avdpool_ng.gebaeudeadressen_lokalisationsnamepos as b, street_name as c
+ WHERE a.gem_bfs = '||bfsnr||'
+ AND b.gem_bfs = '||bfsnr||'
+ AND c.gem_bfs = '||bfsnr||'
+ AND a.t_id = b.lokalisationsnamepos_von
+ AND a.benannte =  c.lok_t_id
+),
+
+foo2 AS (
+ INSERT INTO '||dbschema||'.building_addresses_street_name_pos (t_id, street_name, ori, hali, vali, fosnr, street_name_of, pos)
+ SELECT t_id, atext, ori, hali, vali, gem_bfs, street_name_of, pos
+ FROM street_name_pos
+),
+
+-- plzo_os: Geometrien (mit Ortschaftsnamen) der Ortschaftsnamen, die mit Gemeindegrenze intersecten.
+-- Nicht noetig fuer PLZ, da dort alles in einer Tabelle.
+plzo_os AS (
+ SELECT b.t_id, b.atext, a.flaeche
+ FROM av_plzortschaft.plzortschaft_ortschaft as a, av_plzortschaft.plzortschaft_ortschaftsname as b, av_avdpool_ng.gemeindegrenzen_gemeindegrenze as c
+ WHERE c.gem_bfs = '||bfsnr||'
+ AND a.flaeche && c.geometrie
+ AND ST_Intersects(a.flaeche, c.geometrie)
+ AND a.t_id = ortschaftsname_von
+),
+
+gebaeudeeingang AS (
+ SELECT nextval('''||dbschema||'.t_id'') as t_id, s.t_id as street_of, g.gebaeudeeingang_von, g.t_id as geb_t_id,
+  nf.gueltigereintrag::timestamp without time zone AS stand_am,
+  CASE
+   WHEN g.status IS NULL THEN 1
+   WHEN g.status = 0 THEN 0
+   ELSE 1
+  END as status, g.inaenderung, g.attributeprovisorisch,
+  CASE
+   WHEN g.istoffiziellebezeichnung = 0 THEN TRUE
+   ELSE FALSE
+  END as istoffiziellebezeichnung, g.lage, g.hoehenlage, g.hausnummer, g.im_gebaeude, g.gwr_egid, g.gwr_edid, g.gem_bfs
+ FROM av_avdpool_ng.gebaeudeadressen_gebaeudeeingang as g, street_name as s, av_avdpool_ng.gebaeudeadressen_gebnachfuehrung as nf
+ WHERE g.gem_bfs = '||bfsnr||'
+ AND nf.gem_bfs = '||bfsnr||'
+ AND g.gebaeudeeingang_von = s.lok_t_id
+ AND g.entstehung = nf.t_id
+),
+
+gebaeudeeingang_strassenname AS (
+ SELECT g.*, s.atext as lokname
+ FROM gebaeudeeingang as g, street_name as s
+ WHERE s.lok_t_id = g.gebaeudeeingang_von
+),
+
+gebaeudeeingang_strassenname_plz_ortschaft AS (
+ SELECT g.*, o.atext as ortname, p.plz, p.zusziff
+ FROM gebaeudeeingang_strassenname as g, plzo_os as o, av_plzortschaft.plzo_plz as p
+ WHERE g.lage && o.flaeche
+ AND g.lage && p.geom
+ AND ST_Distance(g.lage, o.flaeche) = 0
+ AND ST_Distance(g.lage, p.geom) = 0
+),
+
+foo3 AS (
+ INSERT INTO '||dbschema||'.building_addresses_building_entrance (t_id, validity, is_official_designation, alevel,
+             house_number, name_of_house, regbl_egid, regbl_edid, street_name, postalcode, additional_number, city,
+             state_of, fosnr, street_of, pos)
+ SELECT t_id, status, istoffiziellebezeichnung, hoehenlage, hausnummer, NULL::varchar, gwr_egid, gwr_edid,
+        lokname, plz, zusziff, ortname, stand_am, gem_bfs, street_of, lage
+ FROM gebaeudeeingang_strassenname_plz_ortschaft
+),
+
+building_addresses_street_name_pos AS (
+ SELECT nextval('''||dbschema||'.t_id'') as t_id, g.t_id as pos_of, 0::integer as typ, g.hausnummer,
+  CASE
+   WHEN h.ori IS NULL THEN 100::double precision
+   ELSE h.ori
+  END AS ori,
+  CASE
+   WHEN h.hali IS NULL THEN 1
+   ELSE h.hali
+  END as hali,
+  CASE
+   WHEN h.vali IS NULL THEN 2
+   ELSE h.vali
+  END as vali,
+  h.gem_bfs, h.pos
+ FROM av_avdpool_ng.gebaeudeadressen_hausnummerpos as h, gebaeudeeingang as g
+ WHERE h.gem_bfs = '||bfsnr||'
+ AND h.hausnummerpos_von = g.geb_t_id
+)
+
+INSERT INTO '||dbschema||'.building_addresses_building_entrance_pos (t_id, type, number_name, ori, hali, vali, fosnr, pos_of, pos)
+SELECT t_id, typ, hausnummer, ori, hali, vali, gem_bfs, pos_of, pos
+FROM building_addresses_street_name_pos;
+';
+
+  RETURN TRUE;
+END;
+$$
+LANGUAGE 'plpgsql';
+
+14:12:39.414 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 5382 ms
+14:12:39.414 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+14:12:39.415 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 5393 ms
+14:12:39.415 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 14:12:39 CEST 2015.
+14:23:40.984 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 14:23:40 CEST 2015.
+14:23:40.986 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+14:23:41.108 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - Existing schema dropped: av_mopublic_export.
+14:23:46.692 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 5722 ms
+14:23:46.692 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+14:23:46.692 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 5731 ms
+14:23:46.692 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 14:23:46 CEST 2015.
+18:31:25.604 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 18:31:25 CEST 2015.
+18:31:25.606 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+18:31:25.835 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - Existing schema dropped: av_mopublic_export.
+18:31:31.470 [main] ERROR org.catais.geoig.ai.mopublic.PostgresqlDatabase - Cannot get property 'text' on null object
+18:31:31.512 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - Schema dropped: av_mopublic_export.
+18:31:31.524 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 5935 ms
+18:31:31.525 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+18:31:31.525 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 5948 ms
+18:31:31.525 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 18:31:31 CEST 2015.
+18:32:38.081 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 18:32:38 CEST 2015.
+18:32:38.083 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+18:32:38.179 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - Existing schema dropped: av_mopublic_export.
+18:32:43.552 [main] ERROR org.catais.geoig.ai.mopublic.PostgresqlDatabase - Cannot get property 'text' on null object
+18:32:43.587 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - Schema dropped: av_mopublic_export.
+18:32:43.591 [main] ERROR org.catais.geoig.ai.mopublic.Main - java.lang.NullPointerException: Cannot get property 'text' on null object
+18:32:43.592 [main] ERROR org.catais.geoig.ai.mopublic.Main - Process aborted.
+18:32:43.602 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 5535 ms
+18:32:43.603 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 18:32:43 CEST 2015.
+18:33:30.503 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 18:33:30 CEST 2015.
+18:33:30.504 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+18:33:30.600 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - Existing schema dropped: av_mopublic_export.
+18:33:36.145 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 5657 ms
+18:33:36.145 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+18:33:36.145 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 5666 ms
+18:33:36.146 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 18:33:36 CEST 2015.
+19:06:33.888 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 19:06:33 CEST 2015.
+19:06:33.889 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:06:33.902 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 28 ms
+19:06:33.902 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:06:33.902 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 38 ms
+19:06:33.903 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 19:06:33 CEST 2015.
+19:06:50.786 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 19:06:50 CEST 2015.
+19:06:50.787 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:06:50.800 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 30 ms
+19:06:50.800 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:06:50.801 [main] DEBUG org.catais.geoig.ai.mopublic.Main - foo
+19:06:50.801 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 41 ms
+19:06:50.801 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 19:06:50 CEST 2015.
+19:07:07.907 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 19:07:07 CEST 2015.
+19:07:07.908 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:07:07.921 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 28 ms
+19:07:07.921 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:07:07.921 [main] DEBUG org.catais.geoig.ai.mopublic.Main - 2549
+19:07:07.922 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 39 ms
+19:07:07.922 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 19:07:07 CEST 2015.
+19:07:46.294 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 19:07:46 CEST 2015.
+19:07:46.296 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:07:46.308 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 30 ms
+19:07:46.308 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:07:46.308 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:07:46.309 [main] DEBUG org.catais.geoig.ai.mopublic.Main - 2549
+19:07:46.309 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 30 ms
+19:07:46.309 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:07:46.309 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 40 ms
+19:07:46.310 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 19:07:46 CEST 2015.
+19:08:23.875 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 19:08:23 CEST 2015.
+19:08:23.877 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:08:23.891 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 28 ms
+19:08:23.891 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:08:23.891 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:08:23.893 [main] DEBUG org.catais.geoig.ai.mopublic.Main - all
+19:08:23.893 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 28 ms
+19:08:23.893 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:08:23.894 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 42 ms
+19:08:23.894 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 19:08:23 CEST 2015.
+19:19:57.827 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 19:19:57 CEST 2015.
+19:19:57.828 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:19:57.841 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 27 ms
+19:19:57.841 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:19:57.841 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export to mopublic transfer file:
+19:19:57.847 [main] ERROR org.catais.geoig.ai.mopublic.Main - For input string: "all"
+19:19:57.848 [main] ERROR org.catais.geoig.ai.mopublic.Main - Process aborted.
+19:19:57.848 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 44 ms
+19:19:57.848 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 19:19:57 CEST 2015.
+19:21:33.598 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 19:21:33 CEST 2015.
+19:21:33.599 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:21:33.613 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 26 ms
+19:21:33.613 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:21:33.613 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export to mopublic transfer file:
+19:21:33.614 [main] DEBUG org.catais.geoig.ai.mopublic.Main - all
+19:21:33.614 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 37 ms
+19:21:33.615 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export done.
+19:21:33.615 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 38 ms
+19:21:33.615 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 19:21:33 CEST 2015.
+19:21:43.840 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 19:21:43 CEST 2015.
+19:21:43.841 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:21:43.855 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 29 ms
+19:21:43.855 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:21:43.855 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export to mopublic transfer file:
+19:21:43.860 [main] ERROR org.catais.geoig.ai.mopublic.Main - No valid export parameter.
+19:21:43.860 [main] ERROR org.catais.geoig.ai.mopublic.Main - Process aborted.
+19:21:43.861 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 45 ms
+19:21:43.861 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 19:21:43 CEST 2015.
+19:22:13.008 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 19:22:12 CEST 2015.
+19:22:13.010 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:22:13.023 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 26 ms
+19:22:13.023 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:22:13.023 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export to mopublic transfer file:
+19:22:13.028 [main] ERROR org.catais.geoig.ai.mopublic.Main - No valid export parameter: allaaa
+19:22:13.028 [main] ERROR org.catais.geoig.ai.mopublic.Main - Process aborted.
+19:22:13.028 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 41 ms
+19:22:13.029 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 19:22:13 CEST 2015.
+19:22:25.925 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sun Aug 02 19:22:25 CEST 2015.
+19:22:25.927 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:22:25.942 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 36 ms
+19:22:25.942 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:22:25.942 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export to mopublic transfer file:
+19:22:25.943 [main] DEBUG org.catais.geoig.ai.mopublic.Main - all
+19:22:25.943 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 48 ms
+19:22:25.944 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export done.
+19:22:25.944 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 49 ms
+19:22:25.944 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 19:22:25 CEST 2015.

@@ -22,13 +22,7 @@ class PostgresqlDatabase {
 	String dburl = "jdbc:postgresql://${dbhost}:${dbport}/${dbdatabase}"
 
 	String modelName = "MOpublic03_ili2_v13"
-	
-//	PostgresqlDatabase(Map options = [:]) {
-//		options.each { entry ->
-//		    println "Name: $entry.key Age: $entry.value"
-//		}		
-//	}
-	
+		
 	void initSchema() {
 		initSchema(dbschema)
 	}
@@ -37,20 +31,8 @@ class PostgresqlDatabase {
 		this.dbschema = dbschema
 		
 		// 0) Drop cascade schema if exists.
-		def sql = Sql.newInstance(dburl)
-		sql.connection.autoCommit = false
-							
-		try {
-			sql.execute("DROP SCHEMA IF EXISTS ${Sql.expand(dbschema)} CASCADE;")	
-			sql.commit()
-		} catch (SQLException e) {
-			sql.rollback()
-			log.error e.getMessage()
-			throw new SQLException(e)
-		} finally {
-			sql.connection.close()
-			sql.close()
-		}
+		dropSchema()
+		log.debug "Existing schema dropped: ${this.dbschema}."
 				
 		// 1) Create schema and tables with ili2pg.
 		def config = ili2dbConfig()
@@ -59,54 +41,19 @@ class PostgresqlDatabase {
 		// 2) Insert functions into schema.
 		// These functions are used to for "Datenumbau"
 		// from DM01AVCH24D -> MOpublic03_ili2_v13
-		def functionFiles = ['sequence.sql', 'metadata_metadata.sql', 'control_points_control_point.sql', 
-			'land_cover_lcsurface.sql', 'land_cover_lcsurfaceproj.sql', 'local_names_names.sql',
-			'ownership_boundary_point.sql', 'ownership_realestate.sql', 'ownership_dpr_mine.sql',
-			'ownership_dpr_mineproj.sql', 'single_objects_surface_element.sql', 'single_objects_linear_element.sql',
-			'single_objects_point_element.sql', 'territorial_boundaries_boundary_terr_point.sql',
-			'territorial_boundaries_municipal_boundary.sql', 'territorial_boundaries_municipal_boundproj.sql',
-			'territorial_boundaries_other_territ_boundary.sql', 'building_addresses.sql']
-		
-		// Loop through all the files and concat the sql together to one query string.
-		// Set search_path (aka schema).
 		try {
-			def query = "SET search_path TO ${Sql.expand(dbschema)};\n"
-			functionFiles.each() { fileName ->
-				query += sqlFunctionFromFile(fileName, dbschema)
-			}
-			
-			// Create the functions.
-			sql = Sql.newInstance(dburl)
-			sql.connection.autoCommit = false
-						
-			try {
-				sql.execute(query)
-				sql.commit()
-			} catch (SQLException e) {
-				sql.rollback()
-				log.error e.getMessage()
-				
-				println 'im here'
-				
-				throw new SQLException(e)
-			} finally {
-				sql.connection.close()
-				sql.close()
-			}
+			def functions = new MOpublicSQLFunctions()
+			functions.createFunctions(dburl, dbschema)
 		} catch (NullPointerException e) {
+			// NPE is thrown when sql file is not found. In this case we need to
+			// get rid of the schema we created with ili2db.
 			log.error e.getMessage()
-			// SQL file is not found.
 			dropSchema()
-			log.info "Schema dropped: ${this.dbschema}."
+			log.debug "Schema dropped: ${this.dbschema}."
+			throw new Exception(e)
 		}
 	}
-	
-	private def sqlFunctionFromFile(fileName, dbschema) {
-		log.debug(fileName)
-		URL url = this.class.classLoader.getResource("sql/${fileName}")
-		return url.text
-	}
-	
+		
 	private def dropSchema() {
 		def sql = Sql.newInstance(dburl)
 		sql.connection.autoCommit = false
@@ -123,6 +70,9 @@ class PostgresqlDatabase {
 			sql.close()
 		}		
 	}
+	
+	
+	// EINE FUNKTION FèR UPDATE.
 	
 	private def ili2dbConfig() {
 		def config = new Config()
