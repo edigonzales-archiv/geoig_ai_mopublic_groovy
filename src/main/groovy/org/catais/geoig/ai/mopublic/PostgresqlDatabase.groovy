@@ -65,21 +65,54 @@ class PostgresqlDatabase {
 			'ownership_dpr_mineproj.sql', 'single_objects_surface_element.sql', 'single_objects_linear_element.sql',
 			'single_objects_point_element.sql', 'territorial_boundaries_boundary_terr_point.sql',
 			'territorial_boundaries_municipal_boundary.sql', 'territorial_boundaries_municipal_boundproj.sql',
-			'territorial_boundaries_other_territ_boundary.sql']
+			'territorial_boundaries_other_territ_boundary.sql', 'building_addresses.sql']
 		
 		// Loop through all the files and concat the sql together to one query string.
 		// Set search_path (aka schema).
-		def query = "SET search_path TO ${Sql.expand(dbschema)};\n"
-		functionFiles.each() { fileName ->
-			query += sqlFunctionFromFile(fileName, dbschema)
-		}
-		
-		// Create the functions.		
-		sql = Sql.newInstance(dburl)
-		sql.connection.autoCommit = false
-					
 		try {
-			sql.execute(query)	
+			def query = "SET search_path TO ${Sql.expand(dbschema)};\n"
+			functionFiles.each() { fileName ->
+				query += sqlFunctionFromFile(fileName, dbschema)
+			}
+			
+			// Create the functions.
+			sql = Sql.newInstance(dburl)
+			sql.connection.autoCommit = false
+						
+			try {
+				sql.execute(query)
+				sql.commit()
+			} catch (SQLException e) {
+				sql.rollback()
+				log.error e.getMessage()
+				
+				println 'im here'
+				
+				throw new SQLException(e)
+			} finally {
+				sql.connection.close()
+				sql.close()
+			}
+		} catch (NullPointerException e) {
+			log.error e.getMessage()
+			// SQL file is not found.
+			dropSchema()
+			log.info "Schema dropped: ${this.dbschema}."
+		}
+	}
+	
+	private def sqlFunctionFromFile(fileName, dbschema) {
+		log.debug(fileName)
+		URL url = this.class.classLoader.getResource("sql/${fileName}")
+		return url.text
+	}
+	
+	private def dropSchema() {
+		def sql = Sql.newInstance(dburl)
+		sql.connection.autoCommit = false
+							
+		try {
+			sql.execute("DROP SCHEMA IF EXISTS ${Sql.expand(this.dbschema)} CASCADE;")	
 			sql.commit()
 		} catch (SQLException e) {
 			sql.rollback()
@@ -88,13 +121,7 @@ class PostgresqlDatabase {
 		} finally {
 			sql.connection.close()
 			sql.close()
-		}				
-	}
-	
-	private def sqlFunctionFromFile(fileName, dbschema) {
-		log.debug(fileName)
-		URL url = this.class.classLoader.getResource("sql/${fileName}")
-		return url.text
+		}		
 	}
 	
 	private def ili2dbConfig() {

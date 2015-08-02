@@ -16,3 +16,4 @@ SELECT av_mopublic_export.territorial_boundaries_boundary_terr_point('av_mopubli
 SELECT av_mopublic_export.territorial_boundaries_municipal_boundary('av_mopublic_export', 2583);
 SELECT av_mopublic_export.territorial_boundaries_municipal_boundproj('av_mopublic_export', 2583);
 SELECT av_mopublic_export.territorial_boundaries_other_territ_boundary('av_mopublic_export', 2583);
+SELECT av_mopublic_export.building_addresses('av_mopublic_export', 2583);

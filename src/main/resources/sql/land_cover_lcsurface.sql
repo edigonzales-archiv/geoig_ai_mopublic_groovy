@@ -34,7 +34,7 @@ WHERE gem_bfs = '||bfsnr||'
 -- t_id vergeben).
 lc AS (
 SELECT nextval('''||dbschema||'.t_id'') AS t_id, bb.t_id as bb_t_id, bb.qualitaet, bb.art, gebnr.gwr_egid,
-       bb.stand_am::timestamp without time zone  as stand_am,
+       bb.stand_am::timestamp without time zone as stand_am,
        bb.gem_bfs, bb.geometrie
 FROM bb LEFT JOIN gebnr ON bb.t_id = gebnr.gebaeudenummer_von
 ),
