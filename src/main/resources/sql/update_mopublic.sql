@@ -5,7 +5,6 @@ $$
 BEGIN
   EXECUTE
 '
-SELECT '||dbschema||'.sequence();
 SELECT '||dbschema||'.metadata_metadata('''||dbschema||''', '||bfsnr||');
 SELECT '||dbschema||'.control_points_control_point('''||dbschema||''', '||bfsnr||');
 SELECT '||dbschema||'.land_cover_lcsurface('''||dbschema||''', '||bfsnr||');

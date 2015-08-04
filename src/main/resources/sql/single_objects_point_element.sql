@@ -27,7 +27,7 @@ AND b.t_id = c.punktelement_von
 foo AS (
  INSERT INTO av_mopublic_export.single_objects_point_element (t_id, validity, type, quality, state_of, fosnr, geometry)
  SELECT t_id, gueltigkeit, art, qualitaet, stand_am::timestamp without time zone, gem_bfs, geometrie
- FROM single_objects_linear_element
+ FROM single_objects_point_element
 ),
 
 single_objects_point_element_postext AS (
@@ -52,7 +52,7 @@ single_objects_point_element_postext AS (
  AND a.objektname_von = c.eo_t_id
 )
 
-INSERT INTO '||dbschema||'.single_objects_linear_element_postext (t_id, type, number_name, ori, hali, vali, fosnr, postext_of, pos)
+INSERT INTO '||dbschema||'.single_objects_point_element_postext (t_id, type, number_name, ori, hali, vali, fosnr, postext_of, pos)
 SELECT t_id, typ, name, ori, hali, vali, gem_bfs, postext_of, pos
 FROM single_objects_point_element_postext;
 ';

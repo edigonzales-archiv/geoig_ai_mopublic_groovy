@@ -1858,3 +1858,120 @@ LANGUAGE 'plpgsql';
 19:22:25.944 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export done.
 19:22:25.944 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 49 ms
 19:22:25.944 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Sun Aug 02 19:22:25 CEST 2015.
+19:35:43.075 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Tue Aug 04 19:35:43 CEST 2015.
+19:35:43.078 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:35:43.091 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 32 ms
+19:35:43.091 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:35:43.091 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export to mopublic transfer file:
+19:35:43.092 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - all
+19:35:43.093 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 45 ms
+19:35:43.093 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export done.
+19:35:43.093 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 45 ms
+19:35:43.093 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Tue Aug 04 19:35:43 CEST 2015.
+19:41:44.720 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Tue Aug 04 19:41:44 CEST 2015.
+19:41:44.721 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:41:44.734 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 25 ms
+19:41:44.734 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:41:44.734 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export to mopublic transfer file:
+19:41:44.735 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - all
+19:41:44.883 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 184 ms
+19:41:44.883 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export done.
+19:41:44.883 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 184 ms
+19:41:44.884 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Tue Aug 04 19:41:44 CEST 2015.
+19:42:32.108 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Tue Aug 04 19:42:32 CEST 2015.
+19:42:32.110 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:42:32.122 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 26 ms
+19:42:32.122 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:42:32.122 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export to mopublic transfer file:
+19:42:32.124 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - all
+19:42:32.233 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 146 ms
+19:42:32.233 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export done.
+19:42:32.234 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 147 ms
+19:42:32.234 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Tue Aug 04 19:42:32 CEST 2015.
+19:42:44.190 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Tue Aug 04 19:42:44 CEST 2015.
+19:42:44.192 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:42:44.205 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 27 ms
+19:42:44.206 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:42:44.206 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export to mopublic transfer file:
+19:42:44.207 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - all
+19:42:44.316 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 148 ms
+19:42:44.316 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export done.
+19:42:44.317 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 149 ms
+19:42:44.317 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Tue Aug 04 19:42:44 CEST 2015.
+19:45:00.203 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Tue Aug 04 19:45:00 CEST 2015.
+19:45:00.205 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:45:00.218 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 28 ms
+19:45:00.218 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:45:00.218 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export to mopublic transfer file:
+19:45:00.328 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 148 ms
+19:45:00.328 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export done.
+19:45:00.329 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 148 ms
+19:45:00.329 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Tue Aug 04 19:45:00 CEST 2015.
+19:45:30.274 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Tue Aug 04 19:45:30 CEST 2015.
+19:45:30.276 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:45:30.289 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 28 ms
+19:45:30.290 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:45:30.290 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export to mopublic transfer file:
+19:45:30.403 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 151 ms
+19:45:30.403 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export done.
+19:45:30.403 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 151 ms
+19:45:30.404 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Tue Aug 04 19:45:30 CEST 2015.
+19:51:19.632 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Tue Aug 04 19:51:19 CEST 2015.
+19:51:19.633 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+19:51:19.646 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 28 ms
+19:51:19.647 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+19:51:19.647 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export to mopublic transfer file:
+19:51:19.795 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - 2549
+19:51:19.800 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - 2583
+19:51:19.801 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 192 ms
+19:51:19.801 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export done.
+19:51:19.801 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 192 ms
+19:51:19.801 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Tue Aug 04 19:51:19 CEST 2015.
+20:06:10.649 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Tue Aug 04 20:06:10 CEST 2015.
+20:06:10.650 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+20:06:10.781 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - Existing schema dropped: av_mopublic_export.
+20:06:17.734 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 7103 ms
+20:06:17.734 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+20:06:17.735 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export to mopublic transfer file:
+20:06:17.773 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - 2549
+20:06:17.773 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - 2583
+20:06:17.773 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 7150 ms
+20:06:17.773 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export done.
+20:06:17.773 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 7150 ms
+20:06:17.774 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Tue Aug 04 20:06:17 CEST 2015.
+20:08:38.439 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Tue Aug 04 20:08:38 CEST 2015.
+20:08:38.440 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+20:08:38.564 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - Existing schema dropped: av_mopublic_export.
+20:08:43.894 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 5468 ms
+20:08:43.894 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+20:08:43.894 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export to mopublic transfer file:
+20:08:43.933 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - 2549
+20:08:43.933 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - 2583
+20:08:43.933 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 5516 ms
+20:08:43.933 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export done.
+20:08:43.933 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 5516 ms
+20:08:43.934 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Tue Aug 04 20:08:43 CEST 2015.
+20:12:36.676 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Tue Aug 04 20:12:36 CEST 2015.
+20:12:36.677 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+20:12:36.794 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - Existing schema dropped: av_mopublic_export.
+20:12:42.093 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 5439 ms
+20:12:42.093 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+20:12:42.093 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export to mopublic transfer file:
+20:12:42.131 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - 2549
+20:12:42.131 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - 2583
+20:12:42.132 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 5487 ms
+20:12:42.132 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export done.
+20:12:42.132 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 5487 ms
+20:12:42.132 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Tue Aug 04 20:12:42 CEST 2015.
+20:15:20.511 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Tue Aug 04 20:15:20 CEST 2015.
+20:15:20.512 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+20:15:20.631 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - Existing schema dropped: av_mopublic_export.
+20:15:25.980 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 5483 ms
+20:15:25.981 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+20:15:25.981 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export to mopublic transfer file:
+20:15:26.023 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - 2549
+20:15:26.023 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - 2583
+20:15:26.023 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 5536 ms
+20:15:26.024 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export done.
+20:15:26.024 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 5537 ms
+20:15:26.024 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Tue Aug 04 20:15:26 CEST 2015.

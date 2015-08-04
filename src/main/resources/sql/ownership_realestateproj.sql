@@ -1,5 +1,5 @@
---DROP FUNCTION ownership_realestate(text, integer);
-CREATE OR REPLACE FUNCTION ownership_realestate(dbschema text, bfsnr integer)
+--DROP FUNCTION ownership_realestateproj(text, integer);
+CREATE OR REPLACE FUNCTION ownership_realestateproj(dbschema text, bfsnr integer)
   RETURNS boolean AS
 $$
 BEGIN

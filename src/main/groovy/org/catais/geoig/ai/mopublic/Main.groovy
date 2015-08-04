@@ -47,7 +47,9 @@ class Main {
 
 //				def pg = new PostgresqlDatabase([dbhost: 'localhost', dbport: '5432', dbdatabase: 'fubar'])
 				def pg = new PostgresqlDatabase()
-//				pg.initSchema("av_mopublic_export")
+				
+				// dbschema als parameter?
+				pg.initSchema("av_mopublic_export")
 
 				endTime = Calendar.instance.time
 				log.debug "Elapsed time: ${(endTime.time - startTime.time)} ms"
@@ -70,7 +72,10 @@ class Main {
 					}
 				}
 				
-				pg.export(options.export)
+				// TODO: export dir?!
+				// dbparameter als option.
+				
+				pg.runExport(options.export, "/tmp/", "gml")
 				
 				endTime = Calendar.instance.time
 				log.debug "Elapsed time: ${(endTime.time - startTime.time)} ms"

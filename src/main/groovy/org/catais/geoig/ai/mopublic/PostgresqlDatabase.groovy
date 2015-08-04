@@ -22,6 +22,10 @@ class PostgresqlDatabase {
 	String dburl = "jdbc:postgresql://${dbhost}:${dbport}/${dbdatabase}"
 
 	String modelName = "MOpublic03_ili2_v13"
+	
+	String exportDirectory = "/tmp/"
+	String exportFormat = "gml"
+	String fosnrQuery = "SELECT bfsnr FROM av_avdpool_ng.gemeindegrenzen_gemeinde;"
 		
 	void initSchema() {
 		initSchema(dbschema)
@@ -53,6 +57,42 @@ class PostgresqlDatabase {
 			throw new Exception(e)
 		}
 	}
+	
+	void runExport(String fosnr, String exportDirectory, String exportFormat) {
+		def fosnrs = []
+		if (fosnr == 'all') {
+			def sql = Sql.newInstance(dburl)
+			
+			try {
+				sql.eachRow(fosnrQuery) {row ->
+					fosnrs << row.bfsnr
+				}
+			} catch (SQLException e) {
+				log.error e.getMessage()
+				throw new SQLException(e)
+			} finally {
+				sql.connection.close()
+				sql.close()
+			}
+		} else {
+			fosnrs << fosnr
+		}
+				
+		// Datenumbau und Export...
+		def config = ili2dbConfig()
+		fosnrs.each() {bfsnr ->
+			log.debug bfsnr
+			
+			
+			
+			
+			
+			
+//			def fileName = exportDirectory + File.separator + bfsnr + "." + exportFormat
+//			config.setXtffile(fileName)
+//			Ili2db.runExport(config, "")
+		}
+	}
 		
 	private def dropSchema() {
 		def sql = Sql.newInstance(dburl)
@@ -70,10 +110,7 @@ class PostgresqlDatabase {
 			sql.close()
 		}		
 	}
-	
-	
-	// EINE FUNKTION FèR UPDATE.
-	
+		
 	private def ili2dbConfig() {
 		def config = new Config()
 		config.setDbhost(dbhost)

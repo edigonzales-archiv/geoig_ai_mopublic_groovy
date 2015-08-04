@@ -1,4 +1,4 @@
-﻿SELECT av_mopublic_export.control_points_control_point('av_mopublic_export', 2549);
+﻿SELECT av_mopublic_export.control_points_control_point('av_mopublic_export', 2583);
 SELECT av_mopublic_export.land_cover_lcsurface('av_mopublic_export', 2583);
 SELECT av_mopublic_export.land_cover_lcsurfaceproj('av_mopublic_export', 2583);
 SELECT av_mopublic_export.metadata_metadata('av_mopublic_export', 2583);
@@ -17,3 +17,4 @@ SELECT av_mopublic_export.territorial_boundaries_municipal_boundary('av_mopublic
 SELECT av_mopublic_export.territorial_boundaries_municipal_boundproj('av_mopublic_export', 2583);
 SELECT av_mopublic_export.territorial_boundaries_other_territ_boundary('av_mopublic_export', 2583);
 SELECT av_mopublic_export.building_addresses('av_mopublic_export', 2583);
+SELECT av_mopublic_export.update_mopublic('av_mopublic_export', 2583);
