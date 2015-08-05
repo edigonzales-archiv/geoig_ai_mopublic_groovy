@@ -11,6 +11,11 @@ class Main {
 	//TODO: proper exception handling!!!!
 
 	static main(args) {
+		// some defaults
+		def dbschema = 'av_mopublic_export'
+		def exportFormat = 'xtf'
+		def exportDirectory = System.getProperty('java.io.tmpdir')
+	
 		def cli = new CliBuilder(
 				usage: 'java -jar XYZ.jar --initdb',
 				header: '\nAvailable options (use --help for help):\n')
@@ -18,6 +23,9 @@ class Main {
 			_ longOpt: 'help', 'Usage Information'
 			_ longOpt: 'schemaimport', 'Prepare database by creating schema with empty tables', required: false
 			_ longOpt: 'export', 'Export MOpublic transfer file.', args:1, argName:'fosnr'
+			_ longOpt: 'dbschema', "The name of the schema in the database. Defaults to ${dbschema}", required: false, args:1, argName:'schema'
+			_ longOpt: 'format', "Export format: xtf, gml, itf. Defaults to ${exportFormat}.",  args:1, argName:'format'
+			_ longOpt: 'directory', 'Directory where exports will be written to. Defaults to java.io.tmpdir.', args:1, argName:'dir'
 		}
 
 		def options= cli.parse(args)
@@ -35,7 +43,19 @@ class Main {
 			cli.usage()
 			return
 		}
+		
+		if (options.format) {
+			exportFormat = options.format
+		}
+		
+		if (options.directory) {
+			exportDirectory = options.directory
+		}
 
+		if (options.dbschema) {
+			dbschema = options.dbschema
+		}
+		
 		// Start logging here.
 		def startTime = Calendar.instance.time
 		def endTime
@@ -49,7 +69,7 @@ class Main {
 				def pg = new PostgresqlDatabase()
 				
 				// dbschema als parameter?
-				pg.initSchema("av_mopublic_export")
+//				pg.initSchema(dbschema)
 
 				endTime = Calendar.instance.time
 				log.debug "Elapsed time: ${(endTime.time - startTime.time)} ms"
@@ -73,9 +93,8 @@ class Main {
 				}
 				
 				// TODO: export dir?!
-				// dbparameter als option.
-				
-				pg.runExport(options.export, "/tmp/", "gml")
+				// dbparameter als option.				
+				pg.runExport(dbschema, options.export, exportDirectory, exportFormat)
 				
 				endTime = Calendar.instance.time
 				log.debug "Elapsed time: ${(endTime.time - startTime.time)} ms"

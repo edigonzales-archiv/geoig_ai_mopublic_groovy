@@ -18,13 +18,16 @@ class PostgresqlDatabase {
 	String dbdatabase = "xanadu2"
 	String dbusr = "stefan"
 	String dbpwd = "ziegler12"
-	String dbschema = "av_mopublic_export"
 	String dburl = "jdbc:postgresql://${dbhost}:${dbport}/${dbdatabase}"
 
+	// TODO:
+	// schemaimport with ili2 and export with ili1 does not work
+	// schemaimoport with ili2 and export with ili2 and *.itf does work
+	// but exports wrong date format?
+	// Workaround: init with ili1 for itf. Not sure if we need to adjust
+	// sql queries (which would be a no-go... I guess).
 	String modelName = "MOpublic03_ili2_v13"
 	
-	String exportDirectory = "/tmp/"
-	String exportFormat = "gml"
 	String fosnrQuery = "SELECT bfsnr FROM av_avdpool_ng.gemeindegrenzen_gemeinde;"
 		
 	void initSchema() {
@@ -32,18 +35,16 @@ class PostgresqlDatabase {
 	}
 	
 	void initSchema(String dbschema) {
-		this.dbschema = dbschema
-		
 		// 0) Drop cascade schema if exists.
-		dropSchema()
-		log.debug "Existing schema dropped: ${this.dbschema}."
+		dropSchema(dbschema)
+		log.debug "Existing schema dropped: ${dbschema}."
 				
 		// 1) Create schema and tables with ili2pg.
-		def config = ili2dbConfig()
+		def config = ili2dbConfig(dbschema)
 		Ili2db.runSchemaImport(config, "");
 		
 		// 2) Insert functions into schema.
-		// These functions are used to for "Datenumbau"
+		// These functions are used to for data rebuilding (Datenumbau)
 		// from DM01AVCH24D -> MOpublic03_ili2_v13
 		try {
 			def functions = new MOpublicSQLFunctions()
@@ -58,7 +59,16 @@ class PostgresqlDatabase {
 		}
 	}
 	
-	void runExport(String fosnr, String exportDirectory, String exportFormat) {
+	void runExport(String dbschema, String fosnr, String exportDirectory, String exportFormat) {		
+		// check if export format is supported
+		if (!['itf', 'xtf', 'gml'].contains(exportFormat)) {
+			throw new Exception("Export format is not supported: ${exportFormat}")
+		}
+				
+		// We save the fosnr of thqe communities we want to export
+		// in a list. If we export only one community its fosnr
+		// is stored in a list too. After that we are able
+		// to treat both cases equally (= for loop).
 		def fosnrs = []
 		if (fosnr == 'all') {
 			def sql = Sql.newInstance(dburl)
@@ -78,29 +88,86 @@ class PostgresqlDatabase {
 			fosnrs << fosnr
 		}
 				
-		// Datenumbau und Export...
-		def config = ili2dbConfig()
+		// rebuilding and export...
+		def config = ili2dbConfig(dbschema)
+		config.setConfigReadFromDb(true)
+	
 		fosnrs.each() {bfsnr ->
 			log.debug bfsnr
 			
+			// delete table content
+			// SQLException will be thrown. Abort export!
+			deleteFromTables(dbschema)
 			
+			// insert data into tables
+			// SQLException will be thrown. Abort export!
+			insertIntoTables(dbschema, bfsnr)
 			
-			
-			
-			
-//			def fileName = exportDirectory + File.separator + bfsnr + "." + exportFormat
-//			config.setXtffile(fileName)
-//			Ili2db.runExport(config, "")
+			// export as interlis
+			def fileName = exportDirectory + File.separator + bfsnr + "." + exportFormat
+			config.setXtffile(fileName)
+			if (exportFormat == 'itf') {
+				config.setItfTranferfile(true)
+			}
+			Ili2db.runExport(config, "")
+			// TODO: there is no proper exception throwing in Ili2db...
+		}
+	}
+	
+	private def insertIntoTables(dbschema, fosnr) {
+		def sql = Sql.newInstance(dburl)
+		sql.connection.autoCommit = false
+		
+		try {
+			sql.execute("SELECT ${Sql.expand(dbschema)}.update_mopublic('${Sql.expand(dbschema)}', ${Sql.expand(fosnr)});")	
+			sql.commit()
+			log.trace "Data inserted into tables."
+		} catch (SQLException e) {
+			sql.rollback()
+			log.error e.getMessage()
+			throw new SQLException(e)
+		} finally {
+			sql.connection.close()
+			sql.close()
+		}
+	}
+	
+	private def deleteFromTables(dbschema) {
+		def sql = Sql.newInstance(dburl)
+		sql.connection.autoCommit = false
+		
+		try {
+			def query = "SELECT * FROM ${Sql.expand(dbschema)}.t_ili2db_classname;"
+			sql.eachRow(query) {row ->
+				def tableName = row.sqlname.toLowerCase()
+								
+				def existsQuery = "SELECT EXISTS (SELECT * FROM information_schema.tables WHERE table_schema = '${Sql.expand(dbschema)}' " +
+								"AND table_name = '${Sql.expand(tableName)}');"
+				if (sql.firstRow(existsQuery).exists) {
+					def deleteQuery = "DELETE FROM ${Sql.expand(dbschema)}.${Sql.expand(tableName)};"
+					sql.execute(deleteQuery)
+				}
+			}
+			sql.commit()
+			log.trace "Data deleted: ${Sql.expand(dbschema)}.${Sql.expand(tableName)}"
+		} catch (SQLException e) {
+			sql.rollback()
+			log.error e.getMessage()
+			throw new SQLException(e)
+		} finally {
+			sql.connection.close()
+			sql.close()
 		}
 	}
 		
-	private def dropSchema() {
+	private def dropSchema(dbschema) {
 		def sql = Sql.newInstance(dburl)
 		sql.connection.autoCommit = false
 							
 		try {
-			sql.execute("DROP SCHEMA IF EXISTS ${Sql.expand(this.dbschema)} CASCADE;")	
+			sql.execute("DROP SCHEMA IF EXISTS ${Sql.expand(dbschema)} CASCADE;")	
 			sql.commit()
+			log.trace "Schema dropped: ${Sql.expand(dbschema)}}"
 		} catch (SQLException e) {
 			sql.rollback()
 			log.error e.getMessage()
@@ -111,7 +178,7 @@ class PostgresqlDatabase {
 		}		
 	}
 		
-	private def ili2dbConfig() {
+	private def ili2dbConfig(dbschema) {
 		def config = new Config()
 		config.setDbhost(dbhost)
 		config.setDbdatabase(dbdatabase)
