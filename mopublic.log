@@ -2468,3 +2468,9 @@ Possible solutions: setItfTranferfile(boolean), isItfTransferfile()
 21:56:57.478 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export done.
 21:56:57.479 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Total elapsed time: 8886 ms
 21:56:57.479 [main] INFO  org.catais.geoig.ai.mopublic.Main - End: Wed Aug 05 21:56:57 CEST 2015.
+15:07:24.262 [main] INFO  org.catais.geoig.ai.mopublic.Main - Start: Sat Aug 15 15:07:24 CEST 2015.
+15:07:24.264 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema:
+15:07:24.281 [main] DEBUG org.catais.geoig.ai.mopublic.Main - Elapsed time: 32 ms
+15:07:24.282 [main] INFO  org.catais.geoig.ai.mopublic.Main - Init database schema done.
+15:07:24.282 [main] INFO  org.catais.geoig.ai.mopublic.Main - Export to mopublic transfer file:
+15:07:24.575 [main] DEBUG org.catais.geoig.ai.mopublic.PostgresqlDatabase - 2549

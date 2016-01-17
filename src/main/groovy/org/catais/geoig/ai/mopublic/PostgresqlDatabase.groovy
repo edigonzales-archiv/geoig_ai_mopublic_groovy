@@ -22,7 +22,7 @@ class PostgresqlDatabase {
 
 	// TODO:
 	// schemaimport with ili2 and export with ili1 does not work
-	// schemaimoport with ili2 and export with ili2 and *.itf does work
+	// schemaimport with ili2 and export with ili2 and *.itf does work
 	// but exports wrong date format?
 	// Workaround: init with ili1 for itf. Not sure if we need to adjust
 	// sql queries (which would be a no-go... I guess).
